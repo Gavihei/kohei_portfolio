@@ -3,6 +3,27 @@ body {
   background-color: #070707;
   margin: 0; }
 
+/* Material iconsを利用する */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* 推奨サイズ */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  /* WebKitブラウザサポート */
+  -webkit-font-smoothing: antialiased;
+  /* Chrome、Safariサポート */
+  text-rendering: optimizeLegibility;
+  /* Firefoxサポート */
+  -moz-osx-font-smoothing: grayscale;
+  /* IEサポート */
+  font-feature-settings: 'liga'; }
+
 .heading1 {
   text-align: center;
   font-size: 50px;
@@ -92,7 +113,7 @@ header {
 
 .works-container .works-pic {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
   display: flex;
   justify-content: space-between; }
   .works-container .works-pic img {
@@ -101,23 +122,48 @@ header {
     margin: 0 auto; }
 .works-container .works {
   background-color: #202020;
-  padding: 15%;
   color: whitesmoke; }
   .works-container .works h1 {
     text-align: center;
-    margin: 0 auto 50px auto; }
+    margin: 0 auto 50px auto;
+    padding-top: 80px; }
   .works-container .works .works-content {
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    padding-bottom: 170px;
+    width: 85%;
+    margin: 0 auto;
+    border-bottom: 2px #696969 solid; }
   .works-container .works img {
     width: 200px;
-    margin: 0 30px; }
+    margin: auto 30px; }
   .works-container .works .works-factor {
     display: flex;
-    border-bottom: 1px #696969 solid; }
+    border-bottom: 1px #696969 solid;
+    width: 650px; }
     .works-container .works .works-factor p {
       margin: 20px;
-      width: 200px; }
+      width: 150px;
+      vertical-align: center; }
       .works-container .works .works-factor p a {
         color: #99ccff; }
+    .works-container .works .works-factor .works-disc {
+      width: 420px; }
+
+.contact-container .contact-box {
+  width: 50%;
+  margin: 20px auto 200px auto;
+  background-color: #696969;
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+  display: flex; }
+  .contact-container .contact-box span {
+    font-size: 60px;
+    margin-right: 10px;
+    color: #070707; }
+  .contact-container .contact-box a {
+    text-decoration: none;
+    color: #070707; }
 
 /*# sourceMappingURL=style.css.map */
